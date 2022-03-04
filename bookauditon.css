@@ -1,0 +1,327 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+    
+}
+
+/* qus1 bg not working in univesal */
+/* for all navbar style */
+.navbar{
+    background-color: black;
+    font-size: 25px;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    
+}
+
+/* for list style */
+.navlink{
+    list-style: none;
+    display: inline;
+    margin-right: 30px;
+    color:white;
+    font-size: 20px;
+}
+
+
+/* h1 */
+.class1{
+    text-align: start;
+    margin-left: 20px;
+    color:white;
+     background: linear-gradient(to right, rgb(146, 54, 54),rgb(185, 202, 33),red, yellow);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: wave 2s ease-in-out infinite;
+    position: relative;
+    background-size: 200% 200%;
+}
+
+@keyframes wave{
+    0%{ background-position: 0 50%;}
+    50%{ background-position: 100% 50%;}
+    100%{background-position: 0 50%;}
+}
+
+/* button */
+.class2{
+    border: 0px;
+    border-bottom: 1px solid black;
+    font-size: 18px;
+    border-radius: 8px;
+    width: 200px;
+    background-color: white;
+    color: black;
+cursor: pointer;    
+}
+
+
+/* header */
+  
+.headline , .headp, .headbtn{
+    animation: fade 1s;
+}
+@keyframes fade {
+    0%{ opacity: 0;
+        
+    }
+    50%{opacity: 0.5;}
+    90%{opacity: 0.7;}
+    100%{opacity: 1;}
+
+}
+
+.headline{
+
+    margin-top: -30%;
+    color: black;
+    margin-left: 18%;
+    font-size: 40px;
+}
+.headp{
+    position: absolute;
+    color: black;
+    font-size: 20px;
+    margin-top: -28%;
+    margin-left: 18%;
+}
+
+
+/* register */
+
+.grid{
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-top: 30%;
+    height: 450px;
+    padding: 30px;
+    margin-right: 10%;
+    margin-left: 10%;
+    box-shadow:  5px 8px 8px black;
+}
+.gridh{
+    font-size: 30px;
+    
+}
+
+.dance{
+    margin-left: 20%;
+    margin-top: 5%;
+    padding: 30px;
+}
+
+.sing{
+    margin-right: 15%;
+    margin-top: 5%;
+    padding: 30px;
+}
+.gridbtn{
+    width: 150px;
+    text-align: center;
+    background-image: linear-gradient(45deg, grey,red,yellow);
+    color: white;
+    border-radius: 10px;
+    font-size: 20px;
+    margin-left: 15%;
+    cursor: pointer;
+    box-shadow: 2px solid grey;
+}
+
+.gridbtn:hover{
+    font-size: 23px;
+    background-color: black;
+}
+.gridbtn:visited{
+    color: blue;
+}
+
+
+
+/* portion1 */
+
+.portion1{
+    background-color: cornsilk;
+    text-align: center;
+    height: 350px;
+    justify-content: center;
+    align-items: center;
+    padding: 35px;
+    margin-top: 5%;
+}
+.portiona{
+    padding: 15px;
+    margin-top: 3%;
+    font-size: 35px;
+    color: white;
+    background: linear-gradient(to right, rgb(114, 102, 102),rgb(158, 99, 99),red, yellow);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.portionb{
+    color: rgb(7, 7, 7);
+    font-size: 20px;
+    margin-top: 2%;
+    background: linear-gradient(to right, rgb(114, 102, 102),rgb(158, 99, 99),red, yellow);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.portionc{
+    border: 0.5px solid white;
+    width: 100px;
+    text-align: center;
+    margin-top: 2%;
+    font-size: 20    px;
+    background-image: linear-gradient(45deg, grey,red,yellow);
+}
+
+
+
+/* team  */
+.teambg{
+    text-align: center;
+    height: 500px;
+    padding: 10px;
+}
+
+.teamhh{
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-top: 1%;
+    font-size: 20px;
+    
+}
+
+.teamp{
+    text-align: center;
+    color: rgb(12, 12, 12);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-top: 1%;
+    font-size: 15px;
+}
+
+.container{
+    margin-top: 3%;
+    display: flex;
+    justify-content: center;
+    
+}
+    .flip{
+        position: relative;
+        justify-content: space-between;
+        margin: 20px 0;
+        width: 300px;
+        height: 200px;
+        background: #fff;
+        transform-style: preserve-3d;
+        transform: perspective(2000px);
+        transition: 1s;
+        box-shadow: inset 300px 0 50px rgba(0,0,0,0.5);
+
+    }
+    .flip:hover{
+        transform:perspective(2000px) rotate(-10deg);
+        box-shadow: inset 20px 0 50px rgba(0,0,0,0.5);
+    }
+    .flip .pic{
+        width: 100%;
+        height: 100%;
+        border: 1px solid #000;
+        box-sizing: border-box;
+        transform-origin: left;
+        z-index: 1;
+        position: relative;
+        transition: 1s;
+        
+    }
+    .flip:hover .pic{
+    transform: rotateY(-135deg);
+    }
+    .flip .pic .img{
+        position: absolute;
+        top: 0;
+        left: 0%;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+
+    }
+    .flip .teamintro{
+        top: 0%;
+        left: 0%;
+        padding: 20px;
+        position: absolute;
+        box-sizing: border-box;
+    }
+    
+    .flip .teamintro1{
+        top: 20%;
+        left: 1%;
+        padding: 20px;
+        position: absolute;
+        box-sizing: border-box;
+    }
+.teambg{
+        background-image: linear-gradient(45deg,#ccb449,#f0ba47,#eeb824da);
+}
+
+/* footer */
+footer{
+    background-color: #141414;
+    height: 160px;
+    color: rgb(245, 241, 241);
+    margin-top: 1%;
+}
+.talent{
+    font-size: 30px;
+    padding: 20px;
+}
+i{
+    color: rgb(238, 232, 231);
+}
+.footp{
+    padding: 20px;
+}
+
+.link1:hover{
+    font-size: 20px;
+    background-color: rgb(52, 219, 248);
+    border: 2px solid rgb(133, 221, 236);
+    color: white;
+}
+
+.link2:hover{
+    font-size: 20px;
+    background-color: rgb(236, 96, 54);
+    border: 2px solid rgb(213, 226, 31);
+    color: white;
+}
+
+.link3:hover{
+    font-size: 20px;
+    background-color: rgb(226, 99, 25);
+    border: 2px solid rgb(226, 223, 29);
+    color: white;
+}
+
+.link4:hover{
+    font-size: 20px;
+    background-color: rgb(36, 37, 37);
+    border: 2px solid rgb(18, 238, 201);
+    color: white;
+}
+.lastfoot{
+    background-color: black;
+    margin-top: 0%;
+    height: 10%;
+    color: white;
+    text-align: center;
+    justify-content: space-around;
+}
+
+
+
+

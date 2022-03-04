@@ -1,0 +1,470 @@
+*{
+   box-sizing: border-box; 
+    margin: 0%;
+    padding: 0%;
+
+}
+
+/* for all navbar style */
+.navbar{
+    background-color: black;
+    font-size: 25px;
+    text-emphasis-color: white;
+    color:white;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom:5px;
+}
+
+/* for list style */
+.navlink{
+    list-style: none;
+    display: inline;
+    margin-right: 30px;
+    font-size: 20px;
+}
+
+
+/* h1 */
+.class1{
+    text-align: start;
+    margin-left: 20px;
+    color:white;
+     background: linear-gradient(to right, rgb(146, 54, 54),rgb(185, 202, 33),red, yellow);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: wave 2s ease-in-out infinite;
+    position: relative;
+    background-size: 200% 200%;
+}
+/* for animations */
+@keyframes wave{
+    0%{ background-position: 0 50%;}
+    50%{ background-position: 100% 50%;}
+    100%{background-position: 0 50%;}
+}
+
+
+
+/* button */
+.class2{
+    border: 0px;
+    border-bottom: 1px solid black;
+    font-size: 18px;
+    border-radius: 8px;
+    width: 200px;
+    background-color: white;
+    color: black;
+cursor: pointer;    
+}
+
+
+/* header */
+.headline , .headp, .headbtn{
+    animation: fade 1s;
+}
+@keyframes fade {
+    0%{ opacity: 0;
+    
+    }
+    50%{opacity: 0.5;}
+    90%{opacity: 0.7;
+    }
+    100%{opacity: 1;}
+
+}
+
+   
+.adhere{
+    width: 100%;
+    height: 200%;
+}
+.headline{
+
+    margin-top: -30%;
+    color: black;
+    margin-left: 18%;
+    font-size: 40px;
+}
+
+@media(max-width:700px){
+    .headline{font-size: 20px;
+    color: rgb(248, 240, 240);
+margin-top: -30%;}
+}
+
+
+
+
+/* image slider */
+.slideshow-container{
+    height: 500px;
+    background: url(pic5.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 90%;
+    margin-left: 5%;
+    animation: slide 10s infinite;
+}
+
+@keyframes slide{
+    
+    0%{
+        background: url(pic5.jpg);
+        background-size: 100% 100%;
+    background-repeat: no-repeat;
+    }
+    25%{
+        background: url(pic5.jpg);
+        background-size: 100% 100%;
+    background-repeat: no-repeat;
+    }
+    50%{
+        background: url(pic6.jpg);
+        background-size: 100% 100%;
+    background-repeat: no-repeat;
+    }
+    75%{
+        background: url(pic7.jpg);
+        background-size: 100% 100%;
+    background-repeat: no-repeat;
+    }
+    100%{
+        background: url(pic8.jpg);
+        background-size: 100% 100%;
+    background-repeat: no-repeat;
+    }
+}
+
+
+
+a:link{
+    color: white;
+}
+/* roll */
+.roll{
+    text-align: center;
+    font-style: italic;
+    margin-top: 25%;
+    margin-bottom: 2%;
+    font-size: 40px;
+     background: linear-gradient(to right, rgb(146, 54, 54),rgb(185, 202, 33),red, yellow);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: wave 10s infinite;
+
+}
+
+
+/* about */
+.about{
+    margin-top: 30px;
+    background-color: cornsilk;
+    height: 550px;
+}
+.classab{
+    margin-left: 50px;
+    font-size: 50px;
+    color: black;
+    font-style: bold;
+    font-family: serif monospace;
+
+
+}
+.classac{
+    margin-left: 15%;
+    margin-top:6px;
+}
+.classap{
+    margin-left: 15%;
+    margin-top: 6px;
+}
+
+.aboutcontainer{
+    display: flex;
+    padding: 5px;
+    margin: 5px;
+    justify-content: space-around;
+}
+strong{font-size: 40px;}
+
+.aboutcard{
+    background-color: white;
+    width: 200px;
+    height: 250px;
+    margin: 10px;
+    text-align: center;
+    box-shadow:1px 1px 20px black;
+    border-radius: 5%;
+    margin-top: 2%;
+}
+
+
+/* card */
+
+.change{
+    padding: 10px;
+    padding-bottom: 30px;
+}
+
+.cardh{
+    text-align: center;
+    margin-top: 2%;
+    padding: 10px;
+}
+.card1{
+    display: flex;
+    margin-left: 20%;
+    margin-top: 5%;
+    margin-right: 20%;
+    justify-content: space-between;
+    height: 200px;
+
+}
+
+.carddance .cardsing{   
+    
+    width: 100%;
+    
+}
+.itam:hover{
+    cursor: pointer;
+    opacity: 0.6;
+}
+.itam{
+    border: 0.5px solid black;
+    box-shadow: 3px 3px 6px gray;
+    width: 200px;
+}
+
+
+
+/* card2 */
+.cardh{
+    font-size: 3 0px;
+    padding: 10px;
+}
+.card2{
+    display: flex;
+    margin-left: 20%;
+    margin-top: 2%;
+    margin-right: 20%;
+    justify-content: space-between;
+}
+
+
+.itam2:hover{
+    cursor: pointer;
+    opacity: 0.6;
+}
+.itam2{
+    border: 0.5px solid black;
+    box-shadow: 3px 3px 6px gray;
+    width: 200px;
+}
+
+
+/* bg animation */
+.change{
+    background-image: linear-gradient(-45deg, #699c8b, #8cccbc, #d35757, #e22b2b); 
+    animation: change 5s ease-in-out infinite;
+    width: 100%;
+    background-size: 400% 400%;
+    color: #fff;
+}
+
+@keyframes change{
+    0%{ background-position: 0 50%;}
+    50%{ background-position: 100% 50%;}
+    100%{background-position: 0 50%;}
+}
+
+
+
+/* portion1 */
+
+.portion1{
+    background-color: cornsilk;
+    text-align: center;
+    height: 350px;
+    justify-content: center;
+    align-items: center;
+    padding: 35px;
+}
+.portiona{
+    padding: 15px;
+    margin-top: 3%;
+    font-size: 35px;
+    color: white;
+    background: linear-gradient(to right, rgb(114, 102, 102),rgb(158, 99, 99),red, yellow);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.portionb{
+    color: rgb(7, 7, 7);
+    font-size: 20px;
+    margin-top: 2%;
+    background: linear-gradient(to right, rgb(114, 102, 102),rgb(158, 99, 99),red, yellow);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.portionc{
+    border: 0.5px solid white;
+    width: 100px;
+    text-align: center;
+    margin-top: 2%;
+    font-size: 20    px;
+    background-image: linear-gradient(45deg, grey,red,yellow);
+}
+
+
+     
+/* team  */
+.teambg{
+    text-align: center;
+    height: 500px;
+    padding: 10px;
+}
+
+.teamhh{
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-top: 1%;
+    font-size: 20px;
+    
+}
+
+.teamp{
+    text-align: center;
+    color: rgb(12, 12, 12);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-top: 1%;
+    font-size: 15px;
+}
+
+.container{
+    margin-top: 3%;
+    display: flex;
+    justify-content: center;
+    
+}
+    .flip{
+        position: relative;
+        justify-content: space-between;
+        margin: 20px 0;
+        width: 300px;
+        height: 200px;
+        background: #fff;
+        transform-style: preserve-3d;
+        transform: perspective(2000px);
+        transition: 1s;
+        box-shadow: inset 300px 0 50px rgba(0,0,0,0.5);
+
+    }
+    .flip:hover{
+        transform:perspective(2000px) rotate(-10deg);
+        box-shadow: inset 20px 0 50px rgba(0,0,0,0.5);
+    }
+    .flip .pic{
+        width: 100%;
+        height: 100%;
+        border: 1px solid #000;
+        box-sizing: border-box;
+        transform-origin: left;
+        z-index: 1;
+        position: relative;
+        transition: 1s;
+        
+    }
+    .flip:hover .pic{
+    transform: rotateY(-135deg);
+    }
+    .flip .pic .img{
+        position: absolute;
+        top: 0;
+        left: 0%;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+
+    }
+    .flip .teamintro{
+        top: 0%;
+        left: 0%;
+        padding: 20px;
+        position: absolute;
+        box-sizing: border-box;
+    }
+    
+    .flip .teamintro1{
+        top: 20%;
+        left: 1%;
+        padding: 20px;
+        position: absolute;
+        box-sizing: border-box;
+    }
+.teambg{
+        background-image: linear-gradient(45deg,#ccb449,#f0ba47,#eeb824da);
+}
+
+
+/* footer */
+footer{
+    background-color: #141414;
+    height: 160px;
+    color: rgb(245, 241, 241);
+    margin-top: 1%;
+}
+.talent{
+    font-size: 30px;
+    padding: 20px;
+}
+i{
+    color: rgb(238, 232, 231);
+}
+.footp{
+    padding: 20px;
+}
+
+.link1:hover{
+    font-size: 20px;
+    background-color: rgb(52, 219, 248);
+    border: 2px solid rgb(133, 221, 236);
+    color: white;
+}
+
+.link2:hover{
+    font-size: 20px;
+    background-color: rgb(236, 96, 54);
+    border: 2px solid rgb(213, 226, 31);
+    color: white;
+}
+
+.link3:hover{
+    font-size: 20px;
+    background-color: rgb(226, 99, 25);
+    border: 2px solid rgb(226, 223, 29);
+    color: white;
+}
+
+.link4:hover{
+    font-size: 20px;
+    background-color: rgb(36, 37, 37);
+    border: 2px solid rgb(18, 238, 201);
+    color: white;
+}
+.lastfoot{
+    background-color: black;
+    margin-top: 0%;
+    height: 10%;
+    color: white;
+    text-align: center;
+    justify-content: space-around;
+}
+
+
+
+
